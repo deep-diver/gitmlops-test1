@@ -37,7 +37,9 @@ runs:
              $GDRIVE_CREDENTIAL, \
              $GH_ACCESS_TOKEN, \
              $CLOUD_ID, \
-             $CLOUD_AT' \
+             $CLOUD_AT, \
+             $WANDB_PROJECT, \
+             $WANDB_API_KEY' \
              < scripts/jl_exp_wandb.sh \
              > scripts/jl_exp_wandb_tmp.sh
         shell: bash             
