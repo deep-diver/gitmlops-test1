@@ -40,34 +40,34 @@ runs:
              $CLOUD_AT' \
              < scripts/jl_exp_wandb.sh \
              > scripts/jl_exp_wandb_tmp.sh
-        shell: bash              
+        shell: bash             
              
       - name: install jarvislabs client
         run: |
           pip install typer
           pip install git+https://github.com/jarvislabsai/jlclient.git
-        shell: bash           
+        shell: bash          
           
       - name: add script to jarvislabs
         id: add_script
         run: |
           python clouds/jarvislabs.py \
             script add \
-              ${{ env.CLOUD_AT }} ${{ env.CLOUD_ID }} scripts/jl_exp_wandb_tmp.sh \
+              ${{ inputs.JARVISLABS_ACCESS_TOKEN }} ${{ inputs.JARVISLABS_ID }} scripts/jl_exp_wandb_tmp.sh \
                 > outputs.txt
           echo "::set-output name=script_id::$(cat outputs.txt)"
-        shell: bash           
+        shell: bash          
           
       - name: create vm on jarvislabs
         run: |
           python clouds/jarvislabs.py \
             vm create \
-              ${{ env.CLOUD_AT }} ${{ env.CLOUD_ID }} ${{ steps.add_script.outputs.script_id }}
-        shell: bash               
+              ${{ inputs.JARVISLABS_ACCESS_TOKEN }} ${{ inputs.JARVISLABS_ID }} ${{ steps.add_script.outputs.script_id }}
+        shell: bash              
               
       - name: remove script from jarvislabs
         run: |
           python clouds/jarvislabs.py \
             script remove \
-              ${{ env.CLOUD_AT }} ${{ env.CLOUD_ID }} ${{ steps.add_script.outputs.script_id }}
-        shell: bash               
+              ${{ inputs.JARVISLABS_ACCESS_TOKEN }} ${{ inputs.JARVISLABS_ID }} ${{ steps.add_script.outputs.script_id }}
+        shell: bash              
