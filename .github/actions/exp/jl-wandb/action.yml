@@ -53,7 +53,7 @@ runs:
         run: |
           python clouds/jarvislabs.py \
             script add \
-              ${{ env.CLOUD_AT }} ${{ env.CLOUD_ID }} scripts/jl_exp_wandb_tmp.sh \
+              ${{ inputs.JARVISLABS_ACCESS_TOKEN }} ${{ inputs.JARVISLABS_ID }} scripts/jl_exp_wandb_tmp.sh \
                 > outputs.txt
           echo "::set-output name=script_id::$(cat outputs.txt)"
         shell: bash          
@@ -62,12 +62,12 @@ runs:
         run: |
           python clouds/jarvislabs.py \
             vm create \
-              ${{ env.CLOUD_AT }} ${{ env.CLOUD_ID }} ${{ steps.add_script.outputs.script_id }}
+              ${{ inputs.JARVISLABS_ACCESS_TOKEN }} ${{ inputs.JARVISLABS_ID }} ${{ steps.add_script.outputs.script_id }}
         shell: bash              
               
       - name: remove script from jarvislabs
         run: |
           python clouds/jarvislabs.py \
             script remove \
-              ${{ env.CLOUD_AT }} ${{ env.CLOUD_ID }} ${{ steps.add_script.outputs.script_id }}
+              ${{ inputs.JARVISLABS_ACCESS_TOKEN }} ${{ inputs.JARVISLABS_ID }} ${{ steps.add_script.outputs.script_id }}
         shell: bash              
