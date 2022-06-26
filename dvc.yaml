@@ -1,0 +1,23 @@
+stages:
+  train:
+    cmd: python pipeline/train.py outputs/model
+    deps:
+    - data
+    - pipeline/modeling.py
+    - pipeline/train_wandb.py
+    params:
+    - train.batch_size
+    - train.epoch
+    - train.lr
+    - train.train_size
+    outs:
+    - outputs/model
+  evaluate:
+    cmd: python pipeline/evaluate.py outputs/model
+    deps:
+    - data/test
+    - outputs/model
+    - pipeline/evaluate.py
+    params:
+    - evaluate.batch_size
+    - evaluate.test
