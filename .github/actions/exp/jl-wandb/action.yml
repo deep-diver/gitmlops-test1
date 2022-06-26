@@ -38,8 +38,8 @@ runs:
              $GH_ACCESS_TOKEN, \
              $CLOUD_ID, \
              $CLOUD_AT' \
-             < scripts/js_exp_wandb.sh \
-             > scripts/js_exp_wandb_tmp.sh
+             < scripts/jl_exp_wandb.sh \
+             > scripts/jl_exp_wandb_tmp.sh
         shell: bash              
              
       - name: install jarvislabs client
@@ -53,7 +53,7 @@ runs:
         run: |
           python clouds/jarvislabs.py \
             script add \
-              ${{ env.CLOUD_AT }} ${{ env.CLOUD_ID }} scripts/js_exp_wandb_tmp.sh \
+              ${{ env.CLOUD_AT }} ${{ env.CLOUD_ID }} scripts/jl_exp_wandb_tmp.sh \
                 > outputs.txt
           echo "::set-output name=script_id::$(cat outputs.txt)"
         shell: bash           
