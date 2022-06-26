@@ -1,0 +1,44 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python pipeline/train_wandb.py outputs/model
+    deps:
+    - path: data
+      md5: bcee19219cd7dfc0b2fa4c8bd1c338e6.dir
+      size: 586445
+      nfiles: 6
+    - path: pipeline/modeling.py
+      md5: 1086122e50c4861e130229cc672fde62
+      size: 1297
+    - path: pipeline/train_wandb.py
+      md5: 05680e13e1da62983c42006c4e488b62
+      size: 2881
+    params:
+      params.yaml:
+        train.batch_size: 32
+        train.epoch: 1
+        train.lr: 0.001
+        train.train_size: 128
+    outs:
+    - path: outputs/model
+      md5: d8c14eb2a2541ded9c060b7d7027e663.dir
+      size: 99062347
+      nfiles: 4
+  evaluate:
+    cmd: python pipeline/evaluate.py outputs/model
+    deps:
+    - path: data/test
+      md5: 5929b3522ef9a55524a4e00ae0250d3e.dir
+      size: 290499
+      nfiles: 1
+    - path: outputs/model
+      md5: d8c14eb2a2541ded9c060b7d7027e663.dir
+      size: 99062347
+      nfiles: 4
+    - path: pipeline/evaluate.py
+      md5: 69a2c14067a49a059ea95bddd8ec2021
+      size: 1622
+    params:
+      params.yaml:
+        evaluate.batch_size: 32
+        evaluate.test: test

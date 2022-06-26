@@ -1,0 +1,49 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.19
+    framework: keras
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.9.12
+    start_time: 1656247985
+    t:
+      1:
+      - 2
+      - 3
+      - 55
+      2:
+      - 2
+      - 3
+      - 55
+      3:
+      - 3
+      - 8
+      - 13
+      - 16
+      4: 3.9.12
+      5: 0.12.19
+      8:
+      - 5
+      10:
+      - 9
+batch_size:
+  desc: null
+  value: 32
+epoch:
+  desc: null
+  value: 1
+lr:
+  desc: null
+  value: 0.001
+test:
+  desc: null
+  value: test
+train:
+  desc: null
+  value: train
+train_size:
+  desc: null
+  value: 128

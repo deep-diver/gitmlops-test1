@@ -1,0 +1,197 @@
+2022-06-26 12:53:05,944 INFO    MainThread:13176 [internal.py:wandb_internal():90] W&B internal server running at pid: 13176, started at: 2022-06-26 12:53:05.943637
+2022-06-26 12:53:05,945 INFO    WriterThread:13176 [datastore.py:open_for_write():75] open: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/run-m6qlqusw.wandb
+2022-06-26 12:53:05,948 DEBUG   SenderThread:13176 [sender.py:send():235] send: header
+2022-06-26 12:53:05,948 DEBUG   SenderThread:13176 [sender.py:send():235] send: run
+2022-06-26 12:53:06,781 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: check_version
+2022-06-26 12:53:06,783 INFO    SenderThread:13176 [dir_watcher.py:__init__():205] watching files in: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files
+2022-06-26 12:53:06,783 INFO    SenderThread:13176 [sender.py:_start_run_threads():812] run started: m6qlqusw with start time 1656247985
+2022-06-26 12:53:06,783 DEBUG   SenderThread:13176 [sender.py:send():235] send: summary
+2022-06-26 12:53:06,784 INFO    SenderThread:13176 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-26 12:53:06,784 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: check_version
+2022-06-26 12:53:06,820 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: run_start
+2022-06-26 12:53:06,821 DEBUG   HandlerThread:13176 [meta.py:__init__():35] meta init
+2022-06-26 12:53:06,821 DEBUG   HandlerThread:13176 [meta.py:__init__():49] meta init done
+2022-06-26 12:53:06,821 DEBUG   HandlerThread:13176 [meta.py:probe():209] probe
+2022-06-26 12:53:06,822 DEBUG   HandlerThread:13176 [meta.py:_setup_git():199] setup git
+2022-06-26 12:53:06,840 DEBUG   HandlerThread:13176 [meta.py:_setup_git():206] setup git done
+2022-06-26 12:53:06,841 DEBUG   HandlerThread:13176 [meta.py:_save_pip():53] save pip
+2022-06-26 12:53:06,841 DEBUG   HandlerThread:13176 [meta.py:_save_pip():67] save pip done
+2022-06-26 12:53:06,842 DEBUG   HandlerThread:13176 [meta.py:_save_conda():74] save conda
+2022-06-26 12:53:07,785 INFO    Thread-7  :13176 [dir_watcher.py:_on_file_created():256] file/dir created: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/wandb-summary.json
+2022-06-26 12:53:07,786 INFO    Thread-7  :13176 [dir_watcher.py:_on_file_created():256] file/dir created: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/conda-environment.yaml
+2022-06-26 12:53:07,786 INFO    Thread-7  :13176 [dir_watcher.py:_on_file_created():256] file/dir created: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/requirements.txt
+2022-06-26 12:53:09,992 DEBUG   HandlerThread:13176 [meta.py:_save_conda():84] save conda done
+2022-06-26 12:53:09,992 DEBUG   HandlerThread:13176 [meta.py:probe():247] probe done
+2022-06-26 12:53:10,034 DEBUG   SenderThread:13176 [sender.py:send():235] send: files
+2022-06-26 12:53:10,035 INFO    SenderThread:13176 [sender.py:_save_file():949] saving file wandb-metadata.json with policy now
+2022-06-26 12:53:10,043 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-26 12:53:10,043 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: stop_status
+2022-06-26 12:53:10,262 DEBUG   SenderThread:13176 [sender.py:send():235] send: telemetry
+2022-06-26 12:53:10,264 DEBUG   SenderThread:13176 [sender.py:send():235] send: telemetry
+2022-06-26 12:53:10,264 DEBUG   SenderThread:13176 [sender.py:send():235] send: telemetry
+2022-06-26 12:53:10,265 DEBUG   SenderThread:13176 [sender.py:send():235] send: files
+2022-06-26 12:53:10,265 INFO    SenderThread:13176 [sender.py:_save_file():949] saving file model-best.h5 with policy live
+2022-06-26 12:53:10,265 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: get_summary
+2022-06-26 12:53:10,265 DEBUG   SenderThread:13176 [sender.py:send():235] send: telemetry
+2022-06-26 12:53:10,631 INFO    Thread-11 :13176 [upload_job.py:push():132] Uploaded file /tmp/tmpiy4a7qm6wandb/31y4atuw-wandb-metadata.json
+2022-06-26 12:53:10,788 INFO    Thread-7  :13176 [dir_watcher.py:_on_file_modified():269] file/dir modified: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/conda-environment.yaml
+2022-06-26 12:53:10,789 INFO    Thread-7  :13176 [dir_watcher.py:_on_file_created():256] file/dir created: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/output.log
+2022-06-26 12:53:10,789 INFO    Thread-7  :13176 [dir_watcher.py:_on_file_created():256] file/dir created: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/wandb-metadata.json
+2022-06-26 12:53:12,789 INFO    Thread-7  :13176 [dir_watcher.py:_on_file_modified():269] file/dir modified: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/output.log
+2022-06-26 12:53:16,791 INFO    Thread-7  :13176 [dir_watcher.py:_on_file_modified():269] file/dir modified: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/output.log
+2022-06-26 12:53:16,798 DEBUG   SenderThread:13176 [sender.py:send():235] send: files
+2022-06-26 12:53:16,798 INFO    SenderThread:13176 [sender.py:_save_file():949] saving file media/graph/graph_summary_b77b254d87578a59d0f7.graph.json with policy now
+2022-06-26 12:53:16,799 DEBUG   SenderThread:13176 [sender.py:send():235] send: summary
+2022-06-26 12:53:16,808 INFO    SenderThread:13176 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-26 12:53:17,551 INFO    Thread-12 :13176 [upload_job.py:push():132] Uploaded file /tmp/tmpiy4a7qm6wandb/1qpnlkjy-media/graph/graph_summary_b77b254d87578a59d0f7.graph.json
+2022-06-26 12:53:17,792 INFO    Thread-7  :13176 [dir_watcher.py:_on_file_modified():269] file/dir modified: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/wandb-summary.json
+2022-06-26 12:53:17,792 INFO    Thread-7  :13176 [dir_watcher.py:_on_file_created():256] file/dir created: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/media/graph/graph_summary_b77b254d87578a59d0f7.graph.json
+2022-06-26 12:53:17,792 INFO    Thread-7  :13176 [dir_watcher.py:_on_file_created():256] file/dir created: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/media
+2022-06-26 12:53:17,792 INFO    Thread-7  :13176 [dir_watcher.py:_on_file_created():256] file/dir created: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/media/graph
+2022-06-26 12:53:18,792 INFO    Thread-7  :13176 [dir_watcher.py:_on_file_modified():269] file/dir modified: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/output.log
+2022-06-26 12:53:20,793 INFO    Thread-7  :13176 [dir_watcher.py:_on_file_modified():269] file/dir modified: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/output.log
+2022-06-26 12:53:22,795 INFO    Thread-7  :13176 [dir_watcher.py:_on_file_modified():269] file/dir modified: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/output.log
+2022-06-26 12:53:24,796 INFO    Thread-7  :13176 [dir_watcher.py:_on_file_modified():269] file/dir modified: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/output.log
+2022-06-26 12:53:25,264 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-26 12:53:25,265 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: stop_status
+2022-06-26 12:53:30,822 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-26 12:53:34,898 DEBUG   SenderThread:13176 [sender.py:send():235] send: stats
+2022-06-26 12:53:36,803 INFO    Thread-7  :13176 [dir_watcher.py:_on_file_modified():269] file/dir modified: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/config.yaml
+2022-06-26 12:53:40,494 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-26 12:53:40,494 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: stop_status
+2022-06-26 12:53:41,152 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-26 12:53:41,153 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-26 12:53:41,158 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: partial_history
+2022-06-26 12:53:41,160 DEBUG   SenderThread:13176 [sender.py:send():235] send: history
+2022-06-26 12:53:41,160 DEBUG   SenderThread:13176 [sender.py:send():235] send: summary
+2022-06-26 12:53:41,163 INFO    SenderThread:13176 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-26 12:53:41,163 DEBUG   SenderThread:13176 [sender.py:send():235] send: summary
+2022-06-26 12:53:41,164 INFO    SenderThread:13176 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-26 12:53:41,169 DEBUG   SenderThread:13176 [sender.py:send():235] send: summary
+2022-06-26 12:53:41,170 INFO    SenderThread:13176 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-26 12:53:41,807 INFO    Thread-7  :13176 [dir_watcher.py:_on_file_modified():269] file/dir modified: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/wandb-summary.json
+2022-06-26 12:53:41,808 INFO    Thread-7  :13176 [dir_watcher.py:_on_file_created():256] file/dir created: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/model-best.h5
+2022-06-26 12:53:42,808 INFO    Thread-7  :13176 [dir_watcher.py:_on_file_modified():269] file/dir modified: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/output.log
+2022-06-26 12:53:46,540 INFO    Thread-13 :13176 [upload_job.py:push():132] Uploaded file /tmp/tmpiy4a7qm6wandb/1x65rq9w-model-best.h5
+2022-06-26 12:53:50,811 INFO    Thread-7  :13176 [dir_watcher.py:_on_file_modified():269] file/dir modified: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/output.log
+2022-06-26 12:53:55,744 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: stop_status
+2022-06-26 12:53:55,744 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: stop_status
+2022-06-26 12:54:03,685 DEBUG   SenderThread:13176 [sender.py:send():235] send: telemetry
+2022-06-26 12:54:04,966 DEBUG   SenderThread:13176 [sender.py:send():235] send: stats
+2022-06-26 12:54:06,232 DEBUG   SenderThread:13176 [sender.py:send():235] send: exit
+2022-06-26 12:54:06,233 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-26 12:54:06,233 INFO    SenderThread:13176 [sender.py:send_exit():371] handling exit code: 0
+2022-06-26 12:54:06,233 INFO    SenderThread:13176 [sender.py:send_exit():373] handling runtime: 59
+2022-06-26 12:54:06,234 INFO    SenderThread:13176 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-26 12:54:06,234 INFO    SenderThread:13176 [sender.py:send_exit():379] send defer
+2022-06-26 12:54:06,235 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: poll_exit
+2022-06-26 12:54:06,235 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: defer
+2022-06-26 12:54:06,235 INFO    HandlerThread:13176 [handler.py:handle_request_defer():164] handle defer: 0
+2022-06-26 12:54:06,236 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: defer
+2022-06-26 12:54:06,236 INFO    SenderThread:13176 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-06-26 12:54:06,236 INFO    SenderThread:13176 [sender.py:transition_state():392] send defer: 1
+2022-06-26 12:54:06,236 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: defer
+2022-06-26 12:54:06,236 INFO    HandlerThread:13176 [handler.py:handle_request_defer():164] handle defer: 1
+2022-06-26 12:54:06,269 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: defer
+2022-06-26 12:54:06,269 INFO    SenderThread:13176 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-06-26 12:54:06,269 INFO    SenderThread:13176 [sender.py:transition_state():392] send defer: 2
+2022-06-26 12:54:06,270 DEBUG   SenderThread:13176 [sender.py:send():235] send: stats
+2022-06-26 12:54:06,270 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: defer
+2022-06-26 12:54:06,270 INFO    HandlerThread:13176 [handler.py:handle_request_defer():164] handle defer: 2
+2022-06-26 12:54:06,270 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: defer
+2022-06-26 12:54:06,270 INFO    SenderThread:13176 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-06-26 12:54:06,271 INFO    SenderThread:13176 [sender.py:transition_state():392] send defer: 3
+2022-06-26 12:54:06,271 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: defer
+2022-06-26 12:54:06,271 INFO    HandlerThread:13176 [handler.py:handle_request_defer():164] handle defer: 3
+2022-06-26 12:54:06,271 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: defer
+2022-06-26 12:54:06,271 INFO    SenderThread:13176 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-06-26 12:54:06,271 INFO    SenderThread:13176 [sender.py:transition_state():392] send defer: 4
+2022-06-26 12:54:06,271 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: defer
+2022-06-26 12:54:06,272 INFO    HandlerThread:13176 [handler.py:handle_request_defer():164] handle defer: 4
+2022-06-26 12:54:06,272 DEBUG   SenderThread:13176 [sender.py:send():235] send: summary
+2022-06-26 12:54:06,273 INFO    SenderThread:13176 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2022-06-26 12:54:06,273 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: defer
+2022-06-26 12:54:06,273 INFO    SenderThread:13176 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-06-26 12:54:06,273 INFO    SenderThread:13176 [sender.py:transition_state():392] send defer: 5
+2022-06-26 12:54:06,274 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: defer
+2022-06-26 12:54:06,274 INFO    HandlerThread:13176 [handler.py:handle_request_defer():164] handle defer: 5
+2022-06-26 12:54:06,274 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: defer
+2022-06-26 12:54:06,274 INFO    SenderThread:13176 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-06-26 12:54:06,337 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-26 12:54:06,543 INFO    SenderThread:13176 [sender.py:transition_state():392] send defer: 6
+2022-06-26 12:54:06,544 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: poll_exit
+2022-06-26 12:54:06,544 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: defer
+2022-06-26 12:54:06,545 INFO    HandlerThread:13176 [handler.py:handle_request_defer():164] handle defer: 6
+2022-06-26 12:54:06,545 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: defer
+2022-06-26 12:54:06,545 INFO    SenderThread:13176 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-06-26 12:54:06,545 INFO    SenderThread:13176 [dir_watcher.py:finish():336] shutting down directory watcher
+2022-06-26 12:54:06,646 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-26 12:54:06,815 INFO    SenderThread:13176 [dir_watcher.py:_on_file_modified():269] file/dir modified: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/wandb-summary.json
+2022-06-26 12:54:06,815 INFO    SenderThread:13176 [dir_watcher.py:_on_file_modified():269] file/dir modified: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/config.yaml
+2022-06-26 12:54:06,815 INFO    SenderThread:13176 [dir_watcher.py:_on_file_modified():269] file/dir modified: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/output.log
+2022-06-26 12:54:06,815 INFO    SenderThread:13176 [dir_watcher.py:finish():366] scan: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files
+2022-06-26 12:54:06,815 INFO    SenderThread:13176 [dir_watcher.py:finish():380] scan save: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/requirements.txt requirements.txt
+2022-06-26 12:54:06,816 INFO    SenderThread:13176 [dir_watcher.py:finish():380] scan save: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/wandb-metadata.json wandb-metadata.json
+2022-06-26 12:54:06,816 INFO    SenderThread:13176 [dir_watcher.py:finish():380] scan save: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/model-best.h5 model-best.h5
+2022-06-26 12:54:06,819 INFO    SenderThread:13176 [dir_watcher.py:finish():380] scan save: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/config.yaml config.yaml
+2022-06-26 12:54:06,819 INFO    SenderThread:13176 [dir_watcher.py:finish():380] scan save: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/output.log output.log
+2022-06-26 12:54:06,820 INFO    SenderThread:13176 [dir_watcher.py:finish():380] scan save: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/wandb-summary.json wandb-summary.json
+2022-06-26 12:54:06,823 INFO    SenderThread:13176 [dir_watcher.py:finish():380] scan save: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/conda-environment.yaml conda-environment.yaml
+2022-06-26 12:54:06,832 INFO    SenderThread:13176 [dir_watcher.py:finish():380] scan save: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/media/graph/graph_summary_b77b254d87578a59d0f7.graph.json media/graph/graph_summary_b77b254d87578a59d0f7.graph.json
+2022-06-26 12:54:06,832 INFO    SenderThread:13176 [sender.py:transition_state():392] send defer: 7
+2022-06-26 12:54:06,833 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: poll_exit
+2022-06-26 12:54:06,833 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: defer
+2022-06-26 12:54:06,833 INFO    HandlerThread:13176 [handler.py:handle_request_defer():164] handle defer: 7
+2022-06-26 12:54:06,834 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: defer
+2022-06-26 12:54:06,834 INFO    SenderThread:13176 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-06-26 12:54:06,834 INFO    SenderThread:13176 [file_pusher.py:finish():145] shutting down file pusher
+2022-06-26 12:54:06,935 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-26 12:54:06,935 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: poll_exit
+2022-06-26 12:54:07,037 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-26 12:54:07,037 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: poll_exit
+2022-06-26 12:54:07,139 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-26 12:54:07,139 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: poll_exit
+2022-06-26 12:54:07,241 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-26 12:54:07,241 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: poll_exit
+2022-06-26 12:54:07,343 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-26 12:54:07,343 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: poll_exit
+2022-06-26 12:54:07,396 INFO    Thread-16 :13176 [upload_job.py:push():132] Uploaded file /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/output.log
+2022-06-26 12:54:07,419 INFO    Thread-14 :13176 [upload_job.py:push():132] Uploaded file /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/requirements.txt
+2022-06-26 12:54:07,423 INFO    Thread-15 :13176 [upload_job.py:push():132] Uploaded file /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/config.yaml
+2022-06-26 12:54:07,425 INFO    Thread-17 :13176 [upload_job.py:push():132] Uploaded file /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/wandb-summary.json
+2022-06-26 12:54:07,427 INFO    Thread-18 :13176 [upload_job.py:push():132] Uploaded file /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/files/conda-environment.yaml
+2022-06-26 12:54:07,445 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-26 12:54:07,445 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: poll_exit
+2022-06-26 12:54:07,547 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-26 12:54:07,547 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: poll_exit
+2022-06-26 12:54:07,628 INFO    Thread-6  :13176 [sender.py:transition_state():392] send defer: 8
+2022-06-26 12:54:07,628 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: defer
+2022-06-26 12:54:07,628 INFO    HandlerThread:13176 [handler.py:handle_request_defer():164] handle defer: 8
+2022-06-26 12:54:07,628 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: defer
+2022-06-26 12:54:07,629 INFO    SenderThread:13176 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-06-26 12:54:07,649 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-26 12:54:08,675 INFO    SenderThread:13176 [sender.py:transition_state():392] send defer: 9
+2022-06-26 12:54:08,675 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: poll_exit
+2022-06-26 12:54:08,676 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: defer
+2022-06-26 12:54:08,676 INFO    HandlerThread:13176 [handler.py:handle_request_defer():164] handle defer: 9
+2022-06-26 12:54:08,676 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: defer
+2022-06-26 12:54:08,676 INFO    SenderThread:13176 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-06-26 12:54:08,676 INFO    SenderThread:13176 [sender.py:transition_state():392] send defer: 10
+2022-06-26 12:54:08,677 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: defer
+2022-06-26 12:54:08,677 DEBUG   SenderThread:13176 [sender.py:send():235] send: final
+2022-06-26 12:54:08,677 INFO    HandlerThread:13176 [handler.py:handle_request_defer():164] handle defer: 10
+2022-06-26 12:54:08,677 DEBUG   SenderThread:13176 [sender.py:send():235] send: footer
+2022-06-26 12:54:08,678 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: defer
+2022-06-26 12:54:08,678 INFO    SenderThread:13176 [sender.py:send_request_defer():388] handle sender defer: 10
+2022-06-26 12:54:08,777 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: poll_exit
+2022-06-26 12:54:08,777 DEBUG   SenderThread:13176 [sender.py:send_request():249] send_request: poll_exit
+2022-06-26 12:54:08,778 INFO    SenderThread:13176 [file_pusher.py:join():150] waiting for file pusher
+2022-06-26 12:54:09,319 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: sampled_history
+2022-06-26 12:54:09,320 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: get_summary
+2022-06-26 12:54:09,322 DEBUG   HandlerThread:13176 [handler.py:handle_request():141] handle_request: shutdown
+2022-06-26 12:54:09,322 INFO    HandlerThread:13176 [handler.py:finish():806] shutting down handler
+2022-06-26 12:54:09,677 INFO    WriterThread:13176 [datastore.py:close():279] close: /workspaces/gitmlops-test1/wandb/run-20220626_125305-m6qlqusw/run-m6qlqusw.wandb
+2022-06-26 12:54:10,217 INFO    SenderThread:13176 [sender.py:finish():1111] shutting down sender
+2022-06-26 12:54:10,217 INFO    SenderThread:13176 [file_pusher.py:finish():145] shutting down file pusher
+2022-06-26 12:54:10,217 INFO    SenderThread:13176 [file_pusher.py:join():150] waiting for file pusher
+2022-06-26 12:54:10,219 INFO    MainThread:13176 [internal.py:handle_exit():80] Internal process exited

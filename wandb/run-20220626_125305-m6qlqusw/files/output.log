@@ -1,0 +1,17 @@
+2022-06-26 12:53:10.047712: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2022-06-26 12:53:10.047767: W tensorflow/stream_executor/cuda/cuda_driver.cc:269] failed call to cuInit: UNKNOWN ERROR (303)
+2022-06-26 12:53:10.047800: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (codespaces-16bbd9): /proc/driver/nvidia/version does not exist
+2022-06-26 12:53:10.048229: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[34m[1mwandb[39m[22m: [33mWARNING[39m The save_model argument by default saves the model in the HDF5 format that cannot save custom objects like subclassed models and custom layers. This behavior will be deprecated in a future release in favor of the SavedModel format. Meanwhile, the HDF5 model is saved as W&B files and the SavedModel as W&B Artifacts.
+2022-06-26 12:53:14.946149: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 102760448 exceeds 10% of free system memory.
+2022-06-26 12:53:15.088438: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 102760448 exceeds 10% of free system memory.
+2022-06-26 12:53:15.136659: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 106463232 exceeds 10% of free system memory.
+2022-06-26 12:53:15.179423: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 102760448 exceeds 10% of free system memory.
+2022-06-26 12:53:15.242901: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 102760448 exceeds 10% of free system memory.
+
+
+
+
+4/4 [==============================] - 29s 8s/step - loss: 11.9041 - sparse_categorical_accuracy: 0.0859 - val_loss: 9.8428 - val_sparse_categorical_accuracy: 0.1328 - _timestamp: 1656248021.0000 - _runtime: 36.0000
+2022-06-26 12:53:49.144134: W tensorflow/python/util/util.cc:368] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.

@@ -1,6 +1,6 @@
 stages:
   train:
-    cmd: python pipeline/train.py outputs/model
+    cmd: python pipeline/train_wandb.py outputs/model
     deps:
     - data
     - pipeline/modeling.py

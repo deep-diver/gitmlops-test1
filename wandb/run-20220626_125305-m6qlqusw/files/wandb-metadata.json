@@ -1,0 +1,24 @@
+{
+    "os": "Linux-5.4.0-1074-azure-x86_64-with-glibc2.31",
+    "python": "3.9.12",
+    "heartbeatAt": "2022-06-26T12:53:06.821544",
+    "startedAt": "2022-06-26T12:53:05.259807",
+    "docker": null,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [
+        "outputs/model"
+    ],
+    "state": "running",
+    "program": "/workspaces/gitmlops-test1/pipeline/train_wandb.py",
+    "codePath": "pipeline/train_wandb.py",
+    "git": {
+        "remote": "https://github.com/deep-diver/gitmlops-test1",
+        "commit": "7330706e1caa92bfea6f7ef838cd11702c3389f0"
+    },
+    "email": null,
+    "root": "/workspaces/gitmlops-test1",
+    "host": "codespaces-16bbd9",
+    "username": "codespace",
+    "executable": "/home/codespace/.conda/envs/dvc/bin/python"
+}
