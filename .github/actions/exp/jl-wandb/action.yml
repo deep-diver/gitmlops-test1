@@ -40,11 +40,13 @@ runs:
              $CLOUD_AT' \
              < scripts/js_exp_wandb.sh \
              > scripts/js_exp_wandb_tmp.sh
+        shell: bash              
              
       - name: install jarvislabs client
         run: |
           pip install typer
           pip install git+https://github.com/jarvislabsai/jlclient.git
+        shell: bash           
           
       - name: add script to jarvislabs
         id: add_script
@@ -54,15 +56,18 @@ runs:
               ${{ env.CLOUD_AT }} ${{ env.CLOUD_ID }} scripts/js_exp_wandb_tmp.sh \
                 > outputs.txt
           echo "::set-output name=script_id::$(cat outputs.txt)"
+        shell: bash           
           
       - name: create vm on jarvislabs
         run: |
           python clouds/jarvislabs.py \
             vm create \
               ${{ env.CLOUD_AT }} ${{ env.CLOUD_ID }} ${{ steps.add_script.outputs.script_id }}
+        shell: bash               
               
       - name: remove script from jarvislabs
         run: |
           python clouds/jarvislabs.py \
             script remove \
               ${{ env.CLOUD_AT }} ${{ env.CLOUD_ID }} ${{ steps.add_script.outputs.script_id }}
+        shell: bash               
