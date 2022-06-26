@@ -22,14 +22,14 @@ runs:
   steps:
       - name: prepare script
         env:
-          CUR_BRANCH: $CUR_BRANCH
-          CUR_PR_ID: $CUR_PR_ID
-          GDRIVE_CREDENTIAL: $GDRIVE_CREDENTIAL
-          GH_ACCESS_TOKEN: $GH_ACCESS_TOKEN
-          CLOUD_ID: $JARVISLABS_ID
-          CLOUD_AT: $JARVISLABS_ACCESS_TOKEN
-          WANDB_PROJECT: $WANDB_PROJECT
-          WANDB_API_KEY: $WANDB_API_KEY
+          CUR_BRANCH: ${{ inputs.CUR_BRANCH }}
+          CUR_PR_ID: ${{ inputs.CUR_PR_ID }}
+          GDRIVE_CREDENTIAL: ${{ inputs.GDRIVE_CREDENTIAL }}
+          GH_ACCESS_TOKEN: ${{ inputs.GH_ACCESS_TOKEN }}
+          CLOUD_ID: ${{ inputs.JARVISLABS_ID }}
+          CLOUD_AT: ${{ inputs.JARVISLABS_ACCESS_TOKEN }}
+          WANDB_PROJECT: ${{ inputs.WANDB_PROJECT }}
+          WANDB_API_KEY: ${{ inputs.WANDB_API_KEY }}
         run: |
           envsubst \
             '$CUR_BRANCH, \
